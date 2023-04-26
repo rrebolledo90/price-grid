@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+blockquote {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  background-color: hsl(204, 43%, 93%);
+  color: #fff;
+}
+
+@font-face {
+  font-family: Karla;
+  src: url(Fonts/Karla-Regular.ttf);
+}
+@font-face {
+  font-family: Karla-Bold;
+  src: url(Fonts/Karla-Bold.ttf);
+}
+
+/* Containers */
+
+.main-container {
+  padding-top: 5rem;
+  display: grid;
+  justify-items: center;
+  text-align: left;
+}
+@media screen and (min-width: 600px) {
+  .main-container {
+    margin: 0 auto;
+    width: 60%;
+  }
+}
+.top-container,
+.left-container,
+.right-container {
+  max-width: 16.4375em;
+  vertical-align: top;
+}
+.right-container {
+  background-color: hsl(179, 62%, 43%, 85.19%);
+}
+@media screen and (min-width: 600px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+  }
+  .top-container {
+    grid-column: 1/3;
+    max-width: 635px;
+  }
+  .left-container {
+    grid-column: 1;
+    grid-row: 2;
+    max-width: 300px;
+  }
+  .right-container {
+    max-width: 318px;
+    padding-top: 1.5em;
+    background-color: hsl(179, 62%, 43%, 85.19%);
+  }
+  blockquote {
+    padding-bottom: 80px;
+  }
+}
+
+.top-container {
+  background-color: #fff;
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  border-top-right-radius: 0.3125em;
+  border-top-left-radius: 0.3125em;
+}
+
+.left-container {
+  background-color: #2ab3b1;
+  padding-left: 1.5em;
+  padding-top: 1.5em;
+  position: relative;
+}
+/* Typography */
+
+h1 {
+  font-size: 1.25rem;
+  color: #2ab3b1;
+  margin-bottom: 24px;
+}
+
+h2 {
+  margin-bottom: 18px;
+}
+a button {
+  padding: 0.625em 5.625em;
+  margin-bottom: 1.4375em;
+  position: absolute;
+  left: 30px;
+  bottom: 0px;
+  background-color: #c0df33;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.price {
+  margin-bottom: 0.25em;
+}
+.access {
+  margin-bottom: 4.6875em;
+}
+.guarantee {
+  font-size: 0.9375rem;
+  color: #c0df33;
+  margin-bottom: 1em;
+}
+.claim,
+.tutorial {
+  font-size: 0.875rem;
+}
+.claim {
+  margin-bottom: 2.0625em;
+  color: #9aa7be;
+}
+.Subscription {
+  font-size: 1.125rem;
+  width: 16.4375em;
+}
+.price,
+.access,
+a {
+  font-size: 1rem;
+}
+.tutorial,
+.why {
+  color: #fff;
+  margin: 0;
+  padding-left: 1.5em;
+  padding-right: 5em;
+}
+.why {
+  font-size: 1.125rem;
+  padding-bottom: 1.125em;
+}
+.tutorial {
+  padding-bottom: 1.875em;
+}
