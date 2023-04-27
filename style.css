@@ -18,6 +18,10 @@ body {
   text-rendering: optimizeSpeed;
   background-color: hsl(204, 43%, 93%);
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Karla;
 }
 
 @font-face {
@@ -98,10 +102,12 @@ h1 {
   font-size: 1.25rem;
   color: #2ab3b1;
   margin-bottom: 24px;
+  font-family: Karla-Bold;
 }
 
 h2 {
   margin-bottom: 18px;
+  font-family: Karla-Bold;
 }
 a button {
   padding: 0.625em 5.625em;
